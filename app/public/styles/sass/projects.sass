@@ -1,0 +1,103 @@
+#projects
+    background: rgba(255,255,255,1)
+    min-height: 100vh
+    display: flex
+    flex-flow: column
+    align-items: center
+    padding-top: 30px
+
+    h3
+        margin-top: 70px
+        font-family: 'Josefin Sans', sans-serif
+        letter-spacing: 0.07em
+        font:
+            size: 1.3em
+            weight: 600
+        text-transform: uppercase
+        cursor: default
+
+    #projects-content
+        width: 60vw
+        display: flex
+        flex-flow: wrap
+        margin: 50px 0
+
+        .image-container
+            height: 40vh
+            flex: 1 50%
+            position: relative
+            cursor: pointer
+
+            &:hover .overlay
+                opacity: 1
+
+            &:hover .content-details
+                top: 50%;
+                left: 50%;
+                opacity: 1;
+            
+            #DD
+                height: 100%
+                width: 100%
+                background: url(../images/D&D.png) center
+                background-size: cover
+
+            #FF
+                height: 100%
+                width: 100%
+                background: url(../images/FF.png) 
+                background-size: cover
+
+            #giphy
+                height: 100%
+                width: 100%
+                background: url(../images/Giphy.png) center
+                background-size: cover  
+
+            #bamazon
+                height: 100%
+                width: 100%
+                background: url(../images/Bamazon.png)
+                background-size: cover              
+
+            .overlay    
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                height: 100%
+                width: 100%
+                background: rgba(255,255,255,0.9)
+                opacity: 0
+                transition: all ease-in-out 400ms
+
+            .content-details 
+                display: flex
+                flex-flow: column
+                align-content: center
+                position: absolute
+                text-align: center
+                padding-left: 1em
+                padding-right: 1em
+                width: 100%
+                top: 50%
+                left: 50%
+                opacity: 0
+                transform: translate(-50%, -50%)
+                transition: all ease-in-out 300ms
+
+                h3 
+                    cursor: default
+
+                a   
+                    color: rgba(0,0,0,0.7)
+                    margin: 0.5em 0
+                    font:
+                        size: 1.2em
+                        family: 'Josefin Sans', sans-serif
+                    transition: all ease-in-out 100ms
+
+                    &:hover 
+                        transform: scale(1.1);
+                
