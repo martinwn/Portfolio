@@ -156,10 +156,10 @@ header {
         width: 100%;
         background: url(../images/Giphy.png) center;
         background-size: cover; }
-      #projects #projects-content .image-container #bamazon {
+      #projects #projects-content .image-container #mongo-scraper {
         height: 100%;
         width: 100%;
-        background: url(../images/Bamazon.png);
+        background: url(../images/MongoScraper.png) center;
         background-size: cover; }
       #projects #projects-content .image-container .overlay {
         position: absolute;
