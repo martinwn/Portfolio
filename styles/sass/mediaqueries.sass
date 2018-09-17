@@ -1,5 +1,10 @@
 @media (max-width: 800px)
 
+    noscript
+
+        h1
+            font-size: 3rem
+
     #contact
 
         div
@@ -35,6 +40,11 @@
             padding-right: 30px
 
 @media (max-width: 640px)
+
+    noscript
+
+        h1
+            font-size: 2rem
 
     header
         padding: 20px
@@ -87,6 +97,20 @@
 
         #projects-content
             width: 80vw
+
+            .image-container
+
+                .content-details
+                    width: 100%
+
+                    a
+                        border: solid 1px rgba(0,0,0,0.7)
+                        padding-top: 4px
+                        margin-left: 10px
+                        margin-right: 10px
+
+                        &:hover
+                            transform: unset
 
     #contact
 
@@ -157,7 +181,7 @@
                         border-radius: 10px
                         border: solid 1px rgba(0,0,0,0.4)  
                         margin: 5px 0
-                        padding: 0 10px 
+                        padding: 0 7px 
                         height: 25px
                         line-height: 25px
                         color: rgba(0,0,0,0.7)

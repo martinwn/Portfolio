@@ -4,6 +4,29 @@ body {
     text-decoration: none;
     color: #fff; }
 
+noscript {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 5; }
+  noscript h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem; }
+
 #fixed-background-1 {
   background-image: url("../images/tom-barrett-512968-unsplash.jpg");
   background-size: cover;
@@ -236,7 +259,7 @@ header {
         text-align: center;
         padding-left: 1em;
         padding-right: 1em;
-        width: 100%;
+        width: 90%;
         top: 50%;
         left: 50%;
         opacity: 0;
@@ -247,7 +270,8 @@ header {
         -o-transition: all ease-in-out 300ms;
         transition: all ease-in-out 300ms; }
         #projects #projects-content .image-container .content-details h3 {
-          cursor: default; }
+          cursor: default;
+          margin-top: 40px; }
         #projects #projects-content .image-container .content-details a {
           color: rgba(0, 0, 0, 0.7);
           margin: 0.5em 0;
@@ -419,6 +443,8 @@ header {
         transform: scale(1.05); }
 
 @media (max-width: 800px) {
+  noscript h1 {
+    font-size: 3rem; }
   #contact div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -444,6 +470,8 @@ header {
     padding-right: 30px; } }
 
 @media (max-width: 640px) {
+  noscript h1 {
+    font-size: 2rem; }
   header {
     padding: 20px;
     display: -webkit-box;
@@ -483,6 +511,17 @@ header {
     z-index: 2; }
     #projects #projects-content {
       width: 80vw; }
+      #projects #projects-content .image-container .content-details {
+        width: 100%; }
+        #projects #projects-content .image-container .content-details a {
+          border: solid 1px rgba(0, 0, 0, 0.7);
+          padding-top: 4px;
+          margin-left: 10px;
+          margin-right: 10px; }
+          #projects #projects-content .image-container .content-details a:hover {
+            -webkit-transform: unset;
+            -ms-transform: unset;
+            transform: unset; }
   #contact div .left a {
     margin: 0 auto; }
     #contact div .left a:hover {
@@ -536,7 +575,7 @@ header {
           border-radius: 10px;
           border: solid 1px rgba(0, 0, 0, 0.4);
           margin: 5px 0;
-          padding: 0 10px;
+          padding: 0 7px;
           height: 25px;
           line-height: 25px;
           color: rgba(0, 0, 0, 0.7); }
