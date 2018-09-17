@@ -43,7 +43,7 @@
         
         nav
             flex-flow: column
-            padding-right: 0
+            padding: 0
             
             div:first-child
                 margin-bottom: 10px
@@ -51,9 +51,8 @@
             div:last-child
 
                 a:first-child
-
-                    p
-                        margin: 0
+                    margin: 0
+                        
         
         section
 
@@ -83,6 +82,8 @@
 @media (max-width: 440px)
 
     #projects 
+        position: relative
+        z-index: 2
 
         #projects-content
             width: 80vw
@@ -93,28 +94,44 @@
 
             .left
 
-                span
-                    
-                    background-color: rgba(255,255,255,0.7)
-                    border-radius: 10px
-                    line-height: 30px
-                    border: solid 1px rgba(0,0,0,0.4)
+                a
+                    margin: 0 auto
 
-                    a
+                    &:hover
+                        transform: unset
+
+                    span
+                        display: table-cell
+                        background-color: rgba(255,255,255,0.7)
+                        border-radius: 10px
+                        border: solid 1px rgba(0,0,0,0.4)  
+                        margin: 5px 0
+                        padding: 0 10px 
+                        height: 30px
+                        line-height: 30px
                         font:
                             size: 0.75em
 
+
             .right
 
-                span:last-child, span:nth-child(3)
-                    background-color: rgba(255,255,255,0.7)
-                    border-radius: 10px
-                    line-height: 30px
-                    border: solid 1px rgba(0,0,0,0.4)  
-                    margin: 5px 0
+                a
+                    margin-top: 5px
 
-                    a
+                    &:hover
+                        transform: unset
+                    
+                    span
+                        display: table-cell
+                        background-color: rgba(255,255,255,0.7)
+                        border-radius: 10px
+                        border: solid 1px rgba(0,0,0,0.4)  
+                        margin: 5px 0
                         padding: 0 10px 
+                        height: 30px
+                        line-height: 30px
+                        
+                        
     header
 
         nav
@@ -122,22 +139,28 @@
                 size: 0.8em
             padding: 0
             width: 100%
+            z-index: 0
 
             div:last-child
                 justify-content: space-between
                 width: 90%
 
                 a
-                    background-color: rgba(255,255,255,0.7)
-                    border-radius: 10px
-                    line-height: 30px
-                    border: solid 1px rgba(0,0,0,0.4)
-                    padding: 0 8px
+                    margin: 0
 
-                    p
-                        margin-left: 0
+                    &:hover
+                        transform: unset
+                    
+                    span
+                        display: table-cell
+                        background-color: rgba(255,255,255,0.7)
+                        border-radius: 10px
+                        border: solid 1px rgba(0,0,0,0.4)  
+                        margin: 5px 0
+                        padding: 0 10px 
+                        height: 25px
+                        line-height: 25px
                         color: rgba(0,0,0,0.7)
-
 
         section
             
