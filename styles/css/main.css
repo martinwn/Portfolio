@@ -212,31 +212,24 @@ header {
         top: 50%;
         left: 50%;
         opacity: 1; }
-      #projects #projects-content .image-container #DD {
+      #projects #projects-content .image-container img {
         height: 100%;
+        width: 100%; }
+      #projects #projects-content .image-container #DD {
         width: 100%;
-        background: url(../images/D&D.png) center;
-        background-size: cover; }
+        height: 100%; }
       #projects #projects-content .image-container #FF {
         height: 100%;
-        width: 100%;
-        background: url(../images/FF.png);
-        background-size: cover; }
+        width: 100%; }
       #projects #projects-content .image-container #giphy {
         height: 100%;
-        width: 100%;
-        background: url(../images/Giphy.png) center;
-        background-size: cover; }
+        width: 100%; }
       #projects #projects-content .image-container #mongo-scraper {
         height: 100%;
-        width: 100%;
-        background: url(../images/MongoScraper.png) center;
-        background-size: cover; }
+        width: 100%; }
       #projects #projects-content .image-container #megaman-react {
         height: 100%;
-        width: 100%;
-        background: url(../images/MegaMan-React.png) center;
-        background-size: cover; }
+        width: 100%; }
       #projects #projects-content .image-container .overlay {
         position: absolute;
         top: 0;
