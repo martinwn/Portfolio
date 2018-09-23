@@ -17,16 +17,16 @@
         cursor: default
 
     #projects-content
-        width: 60vw
         display: flex
-        flex-flow: wrap
+        flex-flow: row wrap
+        width: 60vw
         margin: 50px 0
 
         .image-container
+            min-height: 280px
             flex: 1 50%
             position: relative
             cursor: pointer
-            display: flex
 
             &:hover .overlay
                 opacity: 1
@@ -35,10 +35,6 @@
                 top: 50%;
                 left: 50%;
                 opacity: 1;
-
-            img
-                height: 100%
-                width: 100%
                 
             .overlay    
                 position: absolute
@@ -70,6 +66,7 @@
                 h3 
                     cursor: default
                     margin-top: 40px
+
                 a   
                     color: rgba(0,0,0,0.7)
                     margin: 0.5em 0

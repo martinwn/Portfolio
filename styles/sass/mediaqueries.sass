@@ -1,3 +1,10 @@
+@media (max-width: 1040px) 
+
+    #projects
+
+        #projects-content
+            width: 75vw
+
 @media (max-width: 800px)
 
     noscript
@@ -45,6 +52,14 @@
 
         h1
             font-size: 2rem
+    
+    #projects 
+
+        #projects-content
+            width: 70vw
+
+            .image-container
+                flex: 1 100%
 
     header
         padding: 20px
@@ -76,13 +91,7 @@
         p
             width: 80vw
 
-    #projects 
 
-        #projects-content
-            width: 70vw
-
-            .image-container
-                flex: 1 100%
     
     #footer
 
@@ -99,6 +108,7 @@
             width: 80vw
 
             .image-container
+                min-height: 240px
 
                 .content-details
                     width: 100%
@@ -111,6 +121,9 @@
 
                         &:hover
                             transform: unset
+            
+            .last-child
+                display: none
 
     #contact
 
