@@ -111,7 +111,6 @@ header {
       font-family: 'Josefin Sans', sans-serif;
       letter-spacing: 0.05em;
       margin: 0;
-      text-decoration: overline;
       cursor: default;
       -webkit-transition: all ease-in-out 150ms;
       -o-transition: all ease-in-out 150ms;
